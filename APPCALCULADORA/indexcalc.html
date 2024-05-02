@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculadora</title>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylecalc.css">
+    
+	</head>
+
+  <body style="background: #D9D9D9">
+
+    <div class="container"><!--Inicio Container-->
+
+      <div class="row"><!--Inicio Row primaria-->  
+
+        <div class="col d-flex justify-content-center"><!--Inicio centralizar calc-->
+
+          <br>
+
+          <div class="calculadora"><!--Inicio Calculaldora-->
+            <input id="resultado" type="text" class="form-control resultado" placeholder="0" disabled="disabled" />
+            
+            <div class="row"> <!--Inicio Row1-->                                 
+              <button 
+              onclick="calcular('acao', 'c')" 
+              type="button" 
+              class="btn btn-dark btn-lg clear font-weight-light">C</button>
+
+              <button 
+              onclick="calcular('acao', '/')" 
+              type="button" 
+              class="btn btn-dark btn-lg font-weight-light">/</button>
+
+              <button 
+              onclick="calcular('acao', '*')" 
+              type="button" 
+              class="btn btn-dark btn-lg font-weight-light">x</button>
+            </div><!--Fim Row1-->     
+
+            <div class="row"><!--Inicio Row2-->     
+              <button 
+              onclick="calcular('valor', 7)" 
+              type="button" 
+              class="btn btn-dark btn-lg font-weight-light">7</button>
+
+              <button 
+              onclick="calcular('valor', 8)" 
+              type="button" 
+              class="btn btn-dark btn-lg font-weight-light">8</button>
+
+              <button 
+              onclick="calcular('valor', 9)" 
+              type="button" 
+              class="btn btn-dark btn-lg font-weight-light">9</button>
+
+              <button 
+              onclick="calcular('acao', '-')" 
+              type="button" 
+              class="btn btn-dark btn-lg font-weight-light">-</button>
+
+            </div><!--Fim Row2--> 
+            
+            <div class="row"><!--Inicio Row3--> 
+              <button 
+              onclick="calcular('valor', 4)" 
+              type="button" 
+              class="btn btn-dark btn-lg font-weight-light">4</button>
+
+              <button 
+              onclick="calcular('valor', 5)" 
+              type="button" 
+              class="btn btn-dark btn-lg font-weight-light">5</button>
+
+              <button 
+              onclick="calcular('valor', 6)" 
+              type="button" 
+              class="btn btn-dark btn-lg font-weight-light">6</button>
+              <button 
+              onclick="calcular('acao', '+')" 
+              type="button" 
+              class="btn btn-dark btn-lg font-weight-light">+</button>
+
+            </div><!--Fim Row3--> 
+
+            <div class="row"><!--Inicio Row4--> 
+              <button 
+              onclick="calcular('valor', 1)" 
+              type="button" 
+              class="btn btn-dark btn-lg font-weight-light">1</button>
+
+              <button 
+              onclick="calcular('valor', 2)" 
+              type="button" 
+              class="btn btn-dark btn-lg font-weight-light">2</button>
+
+              <button 
+              onclick="calcular('valor', 3)" 
+              type="button" 
+              class="btn btn-dark btn-lg font-weight-light">3</button>
+
+              <button 
+              onclick="calcular('acao', '=')" 
+              type="button" 
+              class="btn btn-dark btn-lg enter">=</button>
+            </div><!--Fim Row4--> 
+
+            <div class="row" style="margin-top: -60px"><!--Inicio Row5 - (0 e .)--> 
+
+              <button 
+              onclick="calcular('valor', 0)" 
+              type="button" 
+              class="btn btn-dark btn-lg font-weight-light zero">0</button>
+
+              <button 
+              onclick="calcular('acao', '.')" 
+              type="button" 
+              class="btn btn-dark btn-lg font-weight-light">.</button>
+
+            </div><!--Fim Row5 - (0 e .)--> 
+
+          </div><!--Fim Calculaldora-->
+
+        </div><!--Fim centralizar calc-->
+
+      </div><!--Inicio Row primaria-->  
+
+    </div><!--Fim Container-->  
+    
+    
+
+    <script src="jscalc.js"></script>
+  </body>	
+
+</html>
