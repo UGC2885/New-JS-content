@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+}
+  
+form {
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-left: -100px;
+}
+
+label, input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+/* Estilos para mensagens de erro */
+.error-text {
+  color: red;
+  display: none; /* Inicialmente esconde a mensagem de erro */
+}
+
+/* Estilos para campos inválidos */
+.invalid {
+  border: 2px solid red;
+}
+
+/* Estilos para campos válidos */
+.valid {
+  border: 2px solid green;
+}
